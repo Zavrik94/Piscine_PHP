@@ -1,0 +1,159 @@
+
+body {
+    background-color: grey;
+}
+.main {
+    border-radius: 12.3px;
+	background-color: #909090;
+	box-shadow: 12px 9px 10px 4px rgba(0, 0, 0, 0.8);
+}
+.header {
+    margin: 25.5px 365px;
+    width: 1770px;
+    padding: 15px;
+}
+.header42 {
+    width: 565px;
+}
+.close {
+    position:relative;
+    float:right;
+    width: 40px;
+    height: 40px;
+    margin-top: 115px;
+}
+.refresh {
+    position:relative;
+    float:right;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+}
+
+.oeil{
+    border: 3px solid #FF0000;
+}
+
+.loupe {
+    position: relative;
+    float: right;
+    height: 200px;
+    width: 300px;
+}
+.container {
+    overflow:hidden;
+    width:200px
+}
+.box {
+    white-space:nowrap;
+    width: 1700px;
+    margin: 0 420px;
+}
+.box div {
+    width: 90px;
+    display: inline-block;
+
+}
+
+.leftblock {
+    position: relative;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    bottom: 215px;
+}
+.leftpictures {
+    position: relative;
+    width: 90px;
+    height: 82px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.centreblock {
+    position: relative;
+    padding: 15px;
+    padding-right: 1235px;
+    margin-left: 30px;
+    bottom: 5px;
+}
+
+.cluster {
+    width: 1300px;
+    height: 720px;
+}
+
+.rightblock {
+    position: relative;
+    margin-left: 25px;
+    padding: 15px;
+    padding-right: 45px;
+    padding-bottom: 330px;
+    bottom: 530px;
+}
+
+.book {
+    width: 70px;
+    height: 100px;
+    margin-left: 25px;
+}
+
+.towel {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.brick {
+    position: absolute;
+    width: 120px !important;
+    height: 70px;
+    background-image: url(resources/brick.jpg);
+    background-repeat: repeat;
+    background-size: 35% 45%;
+}
+
+.chat {
+    position: absolute;
+    margin-left: 350px;
+    height: 160px;
+    margin-top: 100px;
+    width: 570px;
+    padding: 15px;
+    padding-right: 15px;
+    background-color: lightgreen;
+}
+
+.bold_text {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ital {
+    font-style: italic;
+    font-size: 21px;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+.shadow{
+    text-shadow: 7px 4px 4px #DC143C;
+}
+
+
+.abs input {
+    font-size: 18px;
+    width: 570px;
+}
+
+.abs button {
+    font-size: 18px;
+}
+
+.inp {
+    width: 460px;
+    height: 25px;
+}
+.btn{
+    width: 100px;
+    height: 25px;
+}
