@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <head lang="en">
-<meta name="viewport" content="width=2520, heigth=724, initial-scale=1">
+<meta name="viewport" content="width=2520, height=724, initial-scale=1">
 <head>
     <meta charset="UTF-8">
     <title>Day of the 42</title>
     <link rel="stylesheet" href="doft.css">
 </head>
-<body style="background: gray">
+<body>
     <div class="header main">
         <img src="resources/day_of_the_42.png" class="header42"/>
-        <img src="resources/close.gif" class="close"/>
-        <img src="resources/reload.png" class="refresh">
+        <a href="http://www.relaischateaux.com" title="Disconnect">
+            <img class="close" title="Disconnect" alt="Disconnect" src="resources/close.gif"></a>
+        <a href="http://www.disney.com" title="Start from the beginning">
+            <img class="refresh" title="Start from the beginning" alt="Start from the beginning" src="resources/reload.png"></a>
         <img src="resources/loupe.png" class="loupe">
     </div>
     <div class="box" style="height: 540px">
           <div class="main leftblock">
-              <img src="resources/arrow.png" class="leftpictures"> <br />
-              <img src="resources/main.png" class="leftpictures"> <br />
-              <img src="resources/oeil.png" class="leftpictures oeil"> <br />
-              <img src="resources/outil.png" class="leftpictures"> <br />
-              <img src="resources/chat-icon.png" class="leftpictures">
+              <img src="resources/arrow.png" class="leftpictures" alt="Advance" title="Advance"> <br />
+              <img src="resources/main.png" class="leftpictures" alt="Take" title="Take"> <br />
+              <img src="resources/oeil.png" class="leftpictures oeil" alt="Look" title="Look"> <br />
+              <img src="resources/outil.png" class="leftpictures" alt="Use" title="Use"> <br />
+              <img src="resources/chat-icon.png" class="leftpictures" alt="Speak" title="Speak">
            </div>
            <div class="main centreblock">
-                <img src="resources/cluster.jpg" class="cluster">
+               <img src="resources/cluster.jpg" usemap="#map" class="cluster">
+               <map name="map">
+                   <area target="" alt="IKEA" title="IKEA" href="http://www.ikea.com" coords="640,740,424,426" shape="rect">
+                   <area target="" alt="APPLE" title="APPLE" href="http://www.apple.com" coords="1300,400,1000,700" shape="rect">
+               </map>
             </div>
             <div class="main rightblock">
                 <img src="resources/book.png" class="book"> <br />
@@ -32,10 +38,10 @@
             </div>
         </div>
     <div class="chat main">
-        <p class="text">You <span class="bold_text">enter</span> a large room filled with <span class="shadow">computers</span> ... <br />
-        <i class="ital">-Hello, are you new here?</i></p>
+        <p class="text">You <span class="bold_text">enter</span> a large room filled with <br /><span class="shadow">computers</span> ... <br />
+        <i class="ital">-Hello, are you new here ?</i></p>
         <input type="text" name="reply" class="inp"/>
-        <button class="btn">Repondre</button>
+        <button class="btn">Reply</button>
         <!vous entrez alors dans une grande piece remplie d'ordinateurs...->
         <!-Bonjour, vous etes nouveau ici?->
     </div>

@@ -1,6 +1,5 @@
-
 body {
-    background-color: grey;
+    background-color: #505050;
 }
 .main {
     border-radius: 12.3px;
@@ -59,7 +58,7 @@ body {
     position: relative;
     padding-right: 50px;
     padding-bottom: 15px;
-    bottom: 215px;
+    bottom: 207px;
 }
 .leftpictures {
     position: relative;
@@ -73,7 +72,7 @@ body {
     position: relative;
     padding: 15px;
     padding-right: 1235px;
-    margin-left: 30px;
+    margin-left: 25px;
     bottom: 5px;
 }
 
@@ -130,19 +129,24 @@ body {
 }
 .ital {
     font-style: italic;
-    font-size: 21px;
+    font-size: 20px;
     position: relative;
-    top: -5px;
-    left: -5px;
 }
 .shadow{
     text-shadow: 7px 4px 4px #DC143C;
 }
 
+.text {
+    margin: 0;
+    margin-left: 25px;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: MS Serif, New York, Serif;
+}
 
 .abs input {
     font-size: 18px;
-    width: 570px;
+    width: 545px;
 }
 
 .abs button {
@@ -150,10 +154,11 @@ body {
 }
 
 .inp {
-    width: 460px;
-    height: 25px;
+    margin-left: 25px;
+    width: 435px;
+    height: 15px;
 }
 .btn{
     width: 100px;
-    height: 25px;
+    height: 22px;
 }
