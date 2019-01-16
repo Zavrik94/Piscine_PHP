@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e55f4d7-70ea-4385-b987-e9567c08b68b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day00/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Day00/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day00/ex00/basics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day00/ex00/basics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day00/ex02/doft.css" beforeDir="false" afterPath="$PROJECT_DIR$/Day00/ex02/doft.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day00/ex02/doft.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day00/ex02/doft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day02/ex01/one_more_time.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day02/ex02/magnifying_glass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Day01/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,52 +17,90 @@
     <session id="-1019009502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="1" />
+          <entry key="php" value="5" />
+          <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Bash" value="1" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
+          <entry key="PHP" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="73" />
           <entry key="html" value="6" />
+          <entry key="php" value="2532" />
+          <entry key="sh" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Bash" value="13" />
           <entry key="CSS" value="73" />
           <entry key="HTML" value="6" />
+          <entry key="PHP" value="2532" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day00/ex02/doft.css">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02/ex00/another_word.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="948">
-              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day00/ex02/doft.html">
+        <entry file="file://$PROJECT_DIR$/Day02/ex01/one_more_time.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+            <state relative-caret-position="556">
+              <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day02/ex02/magnifying_glass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day01/ex11/do_op_2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day01/ex03/ft_split.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -77,6 +115,10 @@
       <list>
         <option value="$PROJECT_DIR$/Day00/ex02/doft.html" />
         <option value="$PROJECT_DIR$/Day00/ex02/doft.css" />
+        <option value="$PROJECT_DIR$/Day02/ex00/another_word.php" />
+        <option value="$PROJECT_DIR$/Day02/ex01/123.sh" />
+        <option value="$PROJECT_DIR$/Day02/ex01/one_more_time.php" />
+        <option value="$PROJECT_DIR$/Day02/ex02/magnifying_glass.php" />
       </list>
     </option>
   </component>
@@ -86,16 +128,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="2560" />
     <option name="height" value="1440" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,18 +153,42 @@
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day00" type="462c0819:PsiDirectoryNode" />
+              <item name="Day01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day00" type="462c0819:PsiDirectoryNode" />
-              <item name="ex02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day01" type="462c0819:PsiDirectoryNode" />
+              <item name="ex03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="Day01" type="462c0819:PsiDirectoryNode" />
+              <item name="ex11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="ex00" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="ex01" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,24 +218,21 @@
       <option name="presentableId" value="Default" />
       <updated>1547565074692</updated>
       <workItem from="1547565079042" duration="1208000" />
+      <workItem from="1547611213395" duration="1562000" />
+      <workItem from="1547656847509" duration="7444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1208000" />
+    <option name="totallyTimeSpent" value="10214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13463067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13621922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -172,10 +240,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +258,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Day00/ex02/doft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day00/ex02/doft.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -192,10 +272,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day00/ex02/doft.css">
+    <entry file="file://$PROJECT_DIR$/Day01/ex03/ft_split.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day01/ex11/do_op_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex00/another_word.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex01/123.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex01/one_more_time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex02/magnifying_glass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
