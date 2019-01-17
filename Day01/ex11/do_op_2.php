@@ -22,26 +22,26 @@ function ft_split($str) {
     return ($res);
 }
 
-$res = ft_split($argv[1]);
+$arr = ft_split($argv[1]);
 if ($argc != 2)
     echo "Incorrect Parameters" . PHP_EOL;
-else if ($res == 0)
+else if ($arr == 0)
     echo "Syntax Error" . PHP_EOL;
-else if (count($res) != 3)
+else if (count($arr) != 3)
     echo "Syntax Error" . PHP_EOL;
-else if (!is_numeric($res[0]) || !is_numeric($res[2]))
+else if (!is_numeric($arr[0]) || !is_numeric($arr[2]))
     echo "Syntax Error" . PHP_EOL;
 else {
-    if ($res[1] == '+') {
-        echo $res[0] + $res[2] . PHP_EOL;
-    } else if ($res[1] == '-') {
-        echo $res[0] - $res[2] . PHP_EOL;
-    } else if ($res[1] == '*') {
-        echo $res[0] * $res[2] . PHP_EOL;
-    } else if ($res[1] == '/') {
-        echo $res[0] / $res[2] . PHP_EOL;
-    } else if ($res[1] == '%') {
-        echo $res[0] % $res[2] . PHP_EOL;
+    if ($arr[1] == '+') {
+        echo $arr[0] + $arr[2] . PHP_EOL;
+    } else if ($arr[1] == '-') {
+        echo $arr[0] - $arr[2] . PHP_EOL;
+    } else if ($arr[1] == '*') {
+        echo $arr[0] * $arr[2] . PHP_EOL;
+    } else if ($arr[1] == '/') {
+        echo $arr[0] / $arr[2] . PHP_EOL;
+    } else if ($arr[1] == '%') {
+        echo $arr[0] % $arr[2] . PHP_EOL;
     } else {
         echo "Incorrect Parameters" . PHP_EOL;
     }
