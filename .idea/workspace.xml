@@ -2,22 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e55f4d7-70ea-4385-b987-e9567c08b68b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day02/ex03/who.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day02/ex04/photo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day02/ex05/denial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day03/ex01/phpinfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day03/ex02/print_get.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day03/ex03/cookie_crisp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day03/ex04/raw_text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day03/ex05/read_img.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex00/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex01/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex01/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex02/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex02/modif.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex03/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex03/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex03/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex03/whoami.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/modif.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day04/ex04/whoami.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day01/ex02/oddeven.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day01/ex02/oddeven.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day01/ex11/do_op_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day01/ex11/do_op_2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02/ex00/another_word.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day02/ex00/another_world.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02/ex02/magnifying_glass.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day02/ex02/magnifying_glass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02/peer_notes_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02/peer_notes_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02/resources (1).tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day03/ex00/D03.conf" beforeDir="false" afterPath="$PROJECT_DIR$/Day03/ex00/D03.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vphp/unit-tests/test_d02.py" beforeDir="false" afterPath="$PROJECT_DIR$/vphp/unit-tests/test_d02.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,27 +39,30 @@
     <session id="-1019009502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="1" />
+          <entry key="conf" value="2" />
           <entry key="css" value="1" />
           <entry key="csv" value="10" />
-          <entry key="html" value="1" />
+          <entry key="html" value="6" />
           <entry key="log" value="1" />
-          <entry key="php" value="26" />
+          <entry key="passwd" value="3" />
+          <entry key="php" value="52" />
           <entry key="png" value="2" />
           <entry key="sh" value="1" />
           <entry key="svg" value="1" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -57,12 +70,12 @@
           <entry key="Bash" value="1" />
           <entry key="CSS" value="1" />
           <entry key="CSV" value="7" />
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
-          <entry key="PHP" value="26" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PHP" value="52" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="SVG" value="1" />
-          <entry key="SmartyConfig" value="1" />
+          <entry key="SmartyConfig" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -71,8 +84,8 @@
           <entry key="css" value="73" />
           <entry key="csv" value="30" />
           <entry key="dummy" value="3" />
-          <entry key="html" value="6" />
-          <entry key="php" value="3807" />
+          <entry key="html" value="96" />
+          <entry key="php" value="6916" />
           <entry key="sh" value="13" />
         </counts>
       </usages-collector>
@@ -81,8 +94,8 @@
           <entry key="Bash" value="13" />
           <entry key="CSS" value="73" />
           <entry key="CSV" value="30" />
-          <entry key="HTML" value="6" />
-          <entry key="PHP" value="3807" />
+          <entry key="HTML" value="96" />
+          <entry key="PHP" value="6916" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SmartyConfig" value="18" />
         </counts>
@@ -92,98 +105,96 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex05/denial.php">
+        <entry file="file://$PROJECT_DIR$/Day04/ex03/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex05/data.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="false" fixedHeaders="true" rowLines="3">
-              <column index="0" width="100" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Day04/ex04/auth.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex00/another_world.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Day04/ex04/modif.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day03/ex00/D03.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Day04/ex04/create.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day04/ex04/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day03/ex01/phpinfo.php">
+        <entry file="file://$PROJECT_DIR$/Day04/ex04/create.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day04/ex03/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day04/ex01/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day04/ex02/modif.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day04/ex03/whoami.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex01/one_more_time.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex02/magnifying_glass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex03/who.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02/ex04/photo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>miawallace</find>
       <find>nestor</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,8 +215,23 @@
         <option value="$PROJECT_DIR$/Day02/ex05/denial.php" />
         <option value="$PROJECT_DIR$/Day02/ex01/one_more_time.php" />
         <option value="$PROJECT_DIR$/Day02/ex00/another_world.php" />
-        <option value="$PROJECT_DIR$/Day03/ex00/D03.conf" />
         <option value="$PROJECT_DIR$/Day03/ex01/phpinfo.php" />
+        <option value="$PROJECT_DIR$/Day03/ex02/print_get.php" />
+        <option value="$PROJECT_DIR$/Day03/ex03/cookie_crisp.php" />
+        <option value="$PROJECT_DIR$/Day03/ex05/read_img.php" />
+        <option value="$PROJECT_DIR$/Day03/ex04/raw_text.php" />
+        <option value="$PROJECT_DIR$/Day03/ex00/D03.conf" />
+        <option value="$PROJECT_DIR$/Day04/ex00/index.php" />
+        <option value="$PROJECT_DIR$/Day04/private/passwd" />
+        <option value="$PROJECT_DIR$/Day04/ex01/index.html" />
+        <option value="$PROJECT_DIR$/Day04/ex02/index.html" />
+        <option value="$PROJECT_DIR$/Day04/ex03/login.php" />
+        <option value="$PROJECT_DIR$/Day04/ex03/whoaim.php" />
+        <option value="$PROJECT_DIR$/Day04/ex03/logout.php" />
+        <option value="$PROJECT_DIR$/Day04/ex03/whoami.php" />
+        <option value="$PROJECT_DIR$/Day04/ex01/create.php" />
+        <option value="$PROJECT_DIR$/Day04/ex02/modif.php" />
+        <option value="$PROJECT_DIR$/Day04/ex03/auth.php" />
       </list>
     </option>
   </component>
@@ -219,7 +245,7 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
+    <option name="width" value="920" />
     <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -240,54 +266,42 @@
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04" type="462c0819:PsiDirectoryNode" />
               <item name="ex00" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04" type="462c0819:PsiDirectoryNode" />
               <item name="ex01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04" type="462c0819:PsiDirectoryNode" />
               <item name="ex02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04" type="462c0819:PsiDirectoryNode" />
               <item name="ex03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04" type="462c0819:PsiDirectoryNode" />
               <item name="ex04" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02" type="462c0819:PsiDirectoryNode" />
-              <item name="ex05" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Piscine_PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Piscine_PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Day03" type="462c0819:PsiDirectoryNode" />
-              <item name="ex00" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,9 +311,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Day04/ex04" />
+      <recent name="$PROJECT_DIR$/Day04/ex02" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Day04/ex04" />
+      <recent name="$PROJECT_DIR$/Day04" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -328,31 +353,41 @@
       <workItem from="1547656847509" duration="10949000" />
       <workItem from="1547678239359" duration="2202000" />
       <workItem from="1547682445203" duration="3641000" />
-      <workItem from="1547742013504" duration="1252000" />
+      <workItem from="1547742013504" duration="3763000" />
+      <workItem from="1547844216768" duration="15314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20814000" />
+    <option name="totallyTimeSpent" value="38639000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13860206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13899921" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33941606" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,13 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day01/ex11/do_op_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -434,14 +462,42 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day02/ex05/data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="false" fixedHeaders="true" rowLines="3">
           <column index="0" width="100" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex01/one_more_time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex04/photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day01/ex11/do_op_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02/ex00/another_world.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -459,38 +515,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day02/ex04/photo.php">
+    <entry file="file://$PROJECT_DIR$/Day03/ex01/phpinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day02/ex01/one_more_time.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day02/ex00/another_world.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day03/ex00/D03.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day03/ex01/phpinfo.php">
+    <entry file="file://$PROJECT_DIR$/cook.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day03/ex02/print_get.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day03/ex03/cookie_crisp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day03/ex04/raw_text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day03/ex05/read_img.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex02/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex00/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/private/passwd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="1121" column="9" selection-start-line="1121" selection-start-column="9" selection-end-line="1121" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex03/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex03/whoami.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex03/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex01/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex02/modif.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex03/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex04/auth.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex04/modif.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex04/create.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex04/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day04/ex04/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
         </state>
       </provider>
     </entry>
