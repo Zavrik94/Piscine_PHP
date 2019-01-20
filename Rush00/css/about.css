@@ -1,0 +1,19 @@
+button[type="buy"] {
+    cursor: pointer;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    margin: 15px;
+    margin-top: 1vw;
+    font-size: 1.2em;
+    color: white;
+    background-color: #111;
+}
+button[type="buy"]:hover {
+    background-color: #111 !important;
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+.about_title {
+	font-size: 100px;
+}

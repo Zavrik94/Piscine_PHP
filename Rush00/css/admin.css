@@ -1,0 +1,80 @@
+
+form {
+    text-align: left;
+}
+form input {
+    font-size: 1.2em;
+    text-align: left;
+    cursor: grabbing;
+    width: 382px;
+    height: 50px;
+    margin: 15px;
+    padding: 0 10px;
+    cursor: text;
+}
+input[type="submit"] {
+    cursor: pointer;
+    text-align: center;
+    width: 500px;
+    height: 20em;
+    margin-top: 1vw;
+}
+button[type="submit"] {
+    cursor: pointer;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    margin: 15px;
+    margin-top: 1vw;
+    font-size: 1.2em;
+    color: white;
+    background-color: #111;
+}
+
+.login {
+    margin: 5% 35%;
+    width: 530px;
+}
+
+.text_login {
+    margin-left: 11%;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+
+}
+
+.add {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 830px;
+}
+
+.about {
+    font-size: 1.2em;
+    text-align: left;
+    cursor: grabbing;
+    width: 800px;
+    height: 300px;
+    margin: 15px;
+    padding: 0 10px;
+    cursor: text;
+    resize: none;
+}
+
+.img_url {
+    width: 800px !important;
+}
+
+select {
+    font-size: 1.2em;
+    text-align: left;
+    cursor: grabbing;
+    width: 382px;
+    height: 50px;
+    margin: 15px;
+    padding: 0 10px;
+    cursor: text;
+    opacity: 0.5;
+}
+

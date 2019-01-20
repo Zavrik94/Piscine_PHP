@@ -1,0 +1,64 @@
+table, tr, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+table img {
+    height: 40px;
+    width: auto;
+}
+
+td {
+    height: 50px;
+    padding: 10px;
+    max-width: 30vw;
+    overflow: hidden;
+}
+
+.site-wrap {
+    overflow: hidden;
+}
+
+.table {
+    display: inline-block;
+    width: 51%;
+    height: 85vh;
+    overflow: scroll;
+    margin-bottom: -100px;
+}
+.change_form {
+    float: right;
+    width: 49%;
+    margin-bottom: -100px;
+}
+
+.about_change {
+    font-size: 1.2em;
+    text-align: left;
+    cursor: grabbing;
+    width: 700px;
+    height: 300px;
+    margin: 15px;
+    padding: 0 10px;
+    cursor: text;
+    resize: none;
+}
+.img_url_change {
+    width: 700px !important;
+}
+
+.text_change {
+    width: 332px !important;
+}
+
+select {
+    font-size: 1.2em;
+    text-align: left;
+    cursor: grabbing;
+    width: 332px;
+    height: 50px;
+    margin: 15px;
+    padding: 0 10px;
+    cursor: text;
+    opacity: 0.5;
+}

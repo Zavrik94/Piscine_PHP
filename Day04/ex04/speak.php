@@ -19,11 +19,17 @@
         }
     }
 ?>
-
-<form action="speak.php" method="POST" style="margin: 0">
-    <input type="text" name="msg" style="
-        width: 100%;
-        height: 33px;
-        font-size: 20px;
-    " />
-</form>
+<html>
+    <head>
+        <script language="javascript">top.frames['chat'].location = 'chat.php';</script>
+    </head>
+    <body>
+        <form action="speak.php" method="POST" style="margin: 0">
+            <input type="text" name="msg" style="
+                width: 100%;
+                height: 33px;
+                font-size: 20px;
+            " />
+        </form>
+    </body>
+</html>
