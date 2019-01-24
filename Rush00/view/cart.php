@@ -19,29 +19,25 @@
 
     function submitOrder(&$err) {
         global $conn;
+        $sql = "SELECT MAX(`check_number`) FROM `check`";
+        $answer = mysqli_query($conn, $sql);
+        $res = mysqli_fetch_assoc($answer);
+        $check_num = $res['MAX(`check_number`)'] + 1;
         foreach($_SESSION['cart'] as $item) {
             if ($item['count'] > 0) {
-                $sql = "SELECT MAX(`check_number`) AS 'max' FROM `check`";
-                $answer = mysqli_query($conn, $sql);
-                $res = mysqli_fetch_assoc($answer);
-                $check_num = $res['max'] + 1;
-                
-                
-                $sql = "INSERT INTO `check`(`good_id`, `count`, `user`) " .
-                        "VALUES ('" . $item['id'] . "','" . $item['count'] . "','" . $_SESSION['cart'] . "')";
+                $item_id = $item['id'];
+                $count = $item['count'];
+                $user = $_SESSION['cur_user'];
+                $sql = "INSERT INTO `check`(`check_number`, `good_id`, `count`, `user`) VALUES ('$check_num','$item_id','$count','$user')";
                 $answer = mysqli_query($conn, $sql);
                 if (!$answer) {
                     $err = 'Internal server error, please try later...';
-                    return ;
+                    return (false);
                 }    
-                debug($sql); die(1);
             }
-            
-            header("Location: " . ROOT . "view/login.php");
         }
-        return false;
+        return (true);
     }
-
 
     if ($_POST['refresh']) {
         refreshCount($_POST['refresh'], $_POST['newcount']);
@@ -54,7 +50,8 @@
             $order_submited = false;
         } else {
             $order_submited = submitOrder($submit_err);
-            debug($_SESSION); die(1);
+            if ($order_submited)
+                unset($_SESSION['cart']);
         }
     }
     $goods = $_SESSION['cart'];

@@ -5,24 +5,24 @@
     }
 
     if ($_POST['submit'] == 'search') {
-        $id = $_POST['id'];
-        $answer = mysqli_query($conn, "SELECT * FROM `goods` WHERE `id` LIKE '%$id%'");
+        $name = $_POST['name'];
+        $answer = mysqli_query($conn, "SELECT * FROM `goods` WHERE `name` LIKE '%$name%'");
         $goods = array();
         while ($res = mysqli_fetch_assoc($answer)) {
             $goods[] = $res;
         }
     } else if ($_POST['submit'] == 'OK') {
+        $id = $_POST['id'];
         $name = $_POST['name'];
         $price = $_POST['price'];
         $count = $_POST['count'];
         $about = $_POST['about'];
+        $category = $_POST['category'];
         $img = $_POST['img'];
-        $sql = "UPDATE `goods`
-        SET `name`='$name',`price`='$price',`count`='$count',`about`='$about',`img`='$img'
-        WHERE `name` = '$name'";
+        $sql = "UPDATE `goods` SET `name`='$name',`price`=$price,`count`=$count,`about`='$about',`img`='$img',`category`='$category' WHERE `id` = $id";
         $answer = mysqli_query($conn, $sql);
         if (!$answer) {
-            // Error mess
+            $err = 'Fill all fields, please!';
         }
     }
 ?>
@@ -94,13 +94,13 @@
                     <input type="text" name="name" value="" placeholder="Name" class="text_change">
                     <select name="category">
                         <option disabled selected>Choose category!</option>
-                        <option>Guitars</option>
-                        <option>Keyboard</option>
-                        <option>Drums and Percussion</option>
-                        <option>Brass Instruments</option>
-                        <option>Microphones</option>
-                        <option>Park Audio</option>
-                        <option>Accessories</option>
+                        <option>guitars</option>
+                        <option>keyboard</option>
+                        <option>drums</option>
+                        <option>brass</option>
+                        <option>microphones</option>
+                        <option>park</option>
+                        <option>accessories</option>
                     </select><br />
                     <input type="text" name="price" value="" placeholder="Price" class="text_change">
                     <input type="text" name="count" value="" placeholder="Count at stock" class="text_change"><br />
@@ -109,6 +109,14 @@
                     <button type="submit" name="submit" value="OK">OK</button>
                     <input type="number" name="id" style="display: none">
                 </form>
+
+                <?php if ($err) { ?>
+                    <div class="error">
+                        <?= $err ?>
+                    </div>
+                <?php } 
+                    $err = false;
+                ?>
             </div>
         </div>
     </body>

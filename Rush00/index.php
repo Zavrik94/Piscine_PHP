@@ -16,7 +16,7 @@
         <li class="nav-item"><a href="view/create.php"><img src="img/download.jpeg" class="menu_img">Create Account</a></li>
         <li class="nav-item"><a href="view/shop.php"><img src="img/images.png" class="menu_img">Shop</a></li>
         <li class="nav-item"><a href="view/cart.php"><img src="img/cart2.png" class="menu_img">Cart</a></li>
-        <li class="nav-item"><a href="#"><img src="img/download.png" class="menu_img">Contacts</a></li>
+        <li class="nav-item"><a href="view/contacts.php"><img src="img/download.png" class="menu_img">Contacts</a></li>
     </ul>
 
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />

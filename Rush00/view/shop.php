@@ -69,7 +69,7 @@
             echo "../index.php"; ?>"><img src="../img/home.png" class="menu_img">Home</a></li>
         <li class="nav-item"><a href="modif.php"><img src="../img/login_png_81208.jpg" class="menu_img">Modify Account</a></li>
         <li class="nav-item"><a href="shop.php"><img src="../img/images.png" class="menu_img">Shop</a></li>
-        <li class="nav-item"><a href="#"><img src="../img/cart2.png" class="menu_img">Cart</a></li>
+        <li class="nav-item"><a href="cart.php"><img src="../img/cart2.png" class="menu_img">Cart</a></li>
         <li class="nav-item"><a href="#"><img src="../img/download.png" class="menu_img">Contacts</a></li>
         <?php
             session_start();

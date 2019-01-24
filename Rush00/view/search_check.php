@@ -17,10 +17,22 @@
         $conn = mysqli_connect('localhost', 'root', 'root', 'store');
         $query = "SELECT `price` FROM `goods` WHERE `id`='$id'";
         $answer = mysqli_query($conn, $query);
+        $answer = mysqli_fetch_assoc($answer);
         if (!$answer) {
             return NULL;
         }
-        return ($answer);
+        return ($answer['price']);
+    }
+
+    function get_name_by_id($id) {
+        $conn = mysqli_connect('localhost', 'root', 'root', 'store');
+        $query = "SELECT `name` FROM `goods` WHERE `id`='$id'";
+        $answer = mysqli_query($conn, $query);
+        $answer = mysqli_fetch_assoc($answer);
+        if (!$answer) {
+            return NULL;
+        }
+        return ($answer['name']);
     }
 
     if ($_GET['submit'] == 'search'){
@@ -74,6 +86,7 @@
                             <td>ID</td>
                             <td>Check Number</td>
                             <td>Good ID</td>
+                            <td>Good Name</td>
                             <td>Good Count</td>
                             <td>Price</td>
                             <td>Summ</td>
@@ -86,9 +99,10 @@
                                 <td><?= $goods[$i]['id'] ?></td>
                                 <td><?= $goods[$i]['check_number'] ?></td>
                                 <td><?= $goods[$i]['good_id'] ?></td>
+                                <td><?= get_name_by_id($goods[$i]['good_id']) ?></td>
                                 <td><?= $goods[$i]['count'] ?></td>
-                                <td><?= $goods[$i]['price'] ?></td>
-                                <td><?php echo $goods[$i]['price'] * $goods[$i]['count']; $total += $goods[$i]['price'] * $goods[$i]['count']; ?></td>
+                                <td><?= get_price_by_id($goods[$i]['good_id']) ?></td>
+                                <td><?php echo get_price_by_id($goods[$i]['good_id']) * $goods[$i]['count']; $total += get_price_by_id($goods[$i]['good_id']) * $goods[$i]['count']; ?></td>
                                 <td><?= $goods[$i]['user'] ?></td>
                             </tr>
                         <?php } ?>
