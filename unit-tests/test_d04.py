@@ -8,8 +8,8 @@ from os.path import expanduser
 from os.path import isfile
 from os.path import isdir
 
-day_on_server_location = "http://localhost:8200/Day04"
-location_of_private = "/Users/azavrazh/Piscine_PHP/Day04/private"
+day_on_server_location = "http://localhost:8100/d04"
+location_of_private = "/Users/vbrazas/http/MyWebSite/d04/private"
 
 # # START OF TESTS  START OF TESTS  START OF TESTS  START OF TESTS
 
@@ -101,7 +101,7 @@ print("")
 print("Tests for ex01:")
 run_command("rm -rf " + expanduser(location_of_private))
 test_command("curl -d login=toto1 -d passwd=titi1 -d submit=OK '" + day_on_server_location + "/ex01/create.php'", "OK\n", 0)
-password_file = location_of_private + "/passwd"
+password_file = expanduser(location_of_private + "/passwd")
 test_boolean('a:1:{' == get_file_contents(password_file)[:5]
                   , "begin part of serialized file (" + password_file + ")")
 test_command("curl -d login=toto1 -d passwd=titi1 -d submit=OK '" + day_on_server_location + "/ex01/create.php'", "ERROR\n", 0)

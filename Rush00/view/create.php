@@ -23,17 +23,18 @@
         }
         header("Location: " . ROOT . "view/login.php");
     }
-
-    if (!$_POST["login"]) {
-        $err = 'Pleace, enter the login!';
-    } else if (!$_POST["passwd"]) {
-        $err = 'Pleace, enter the password!';
-    } else if (!$_POST["mail"]) {
-        $err = 'Pleace, enter the e-mail!';
-    } else if (!$_POST["number"]) {
-        $err = 'Pleace, enter the telephone number!';
-    } else {
-        createAccount($err, $conn, $_POST);
+    if ($_POST) {
+        if (!$_POST["login"]) {
+            $err = 'Pleace, enter the login!';
+        } else if (!$_POST["passwd"]) {
+            $err = 'Pleace, enter the password!';
+        } else if (!$_POST["mail"]) {
+            $err = 'Pleace, enter the e-mail!';
+        } else if (!$_POST["number"]) {
+            $err = 'Pleace, enter the telephone number!';
+        } else {
+            createAccount($err, $conn, $_POST);
+        }
     }
 ?>
 
@@ -50,8 +51,8 @@
             <li class="nav-item"><a href="login.php"><img src="../img/login_png_81208.jpg" class="menu_img">Login</a></li>
             <li class="nav-item"><a href="create.php"><img src="../img/download.jpeg" class="menu_img">Create Account</a></li>
             <li class="nav-item"><a href="shop.php"><img src="../img/images.png" class="menu_img">Shop</a></li>
-            <li class="nav-item"><a href="#"><img src="../img/cart2.png" class="menu_img">Cart</a></li>
-            <li class="nav-item"><a href="#"><img src="../img/download.png" class="menu_img">Contacts</a></li>
+            <li class="nav-item"><a href="cart.php"><img src="../img/cart2.png" class="menu_img">Cart</a></li>
+            <li class="nav-item"><a href="contacts.php"><img src="../img/download.png" class="menu_img">Contacts</a></li>
         </ul>
 
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -66,12 +67,8 @@
                 <button type="submit" name="submit" value="OK">OK</button>
             </form>
             <?php if ($err) { ?>
-                <div class="error">
-                    <?= $err ?>
-                </div>
-            <?php } 
-                $err = false;
-            ?>
+                <script>alert('<?= $err ?>');</script>
+            <?php } $err = false; ?>
         </div>
     </body>
 </html>

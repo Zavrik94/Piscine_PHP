@@ -7,13 +7,14 @@ document.querySelectorAll('.tbodytr').forEach(row => row.addEventListener("click
         let curNode;
 
         if (name == 'category') {
-            // curNode = form.querySelectorAll('select[name="' + name + '"]>option');
-            // curNode.forEach(function(node) {
-            //     console.log(node.getAttribute('selected'));
-            //     if (node.getAttribute('selected')) {
-
-            //     }
-            // })
+            curNode = form.querySelectorAll('select[name="' + name + '"]>option');
+            curNode.forEach(function(node) {
+                if (node.innerHTML == td.innerText) {
+                    node.setAttribute('selected', 'true');
+                } else {
+                    node.removeAttribute('selected');
+                }
+            })
         } else if (name == 'about') {
             curNode = form.querySelector('textarea[name="' + name + '"]');
             curNode.innerText = td.innerText;

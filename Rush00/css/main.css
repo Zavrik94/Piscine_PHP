@@ -55,3 +55,46 @@
 	border: 1px black solid;
 	padding: 5px;
 }
+
+#main {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+	grid-gap: 0.5vw
+  }
+
+.main-item {
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	padding: 0.5vw;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 5vw;
+	height: 250px;
+	width: 450px;
+	overflow: hidden;
+}
+
+.img_menu {
+	height: 200px;
+	width: auto;
+}
+
+.welcome {
+	position: relative;
+	font-size: 1.9vw;
+	margin: auto;
+	width: 100vw;
+}
+
+#main-img4 {
+	margin: 70px;
+}
+.check_table {
+
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+

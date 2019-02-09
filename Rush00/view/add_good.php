@@ -1,6 +1,6 @@
 <?php
-    session_start();
     include("../main_script.php");
+
     if ($_SESSION['cur_user'] != 'admin') {
         header("Location: main.php"); exit (1);
     }

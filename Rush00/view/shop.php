@@ -1,47 +1,73 @@
 <?php
     include_once("../main_script.php");
 
-    function get_for_title($title) {
-        $conn = mysqli_connect('localhost', 'root', 'root', 'store');
-        $title = 15 * ($title - 1);
-        if (!$_GET['category']) {
-            $answer = mysqli_query($conn, "SELECT * FROM `goods` LIMIT 15 OFFSET $title");
-        } else {
-            $category = $_GET['category'];
-            $answer = mysqli_query($conn, "SELECT * FROM `goods` WHERE `category` = '$category' LIMIT 15 OFFSET $title");
-        }
-        $goods = array();
-        while ($res = mysqli_fetch_assoc($answer)) {
-            $goods[] = $res;
-        }
-        return $goods;
-    }
+    if (!$_POST) {
 
-    function get_title_count() {
-        $conn = mysqli_connect('localhost', 'root', 'root', 'store');
-        if (!$_GET['category']) {
-            $answer = mysqli_query($conn, "SELECT COUNT(*) FROM `goods`");
-        } else {
-            $category = $_GET['category'];
-            $answer = mysqli_query($conn, "SELECT COUNT(*) FROM `goods` WHERE `category` = '$category'");
+        function get_for_title($title) {
+            $conn = mysqli_connect('localhost', 'root', 'root', 'store');
+            $title = 15 * ($title - 1);
+            if (!$_GET['category']) {
+                $answer = mysqli_query($conn, "SELECT * FROM `goods` LIMIT 15 OFFSET $title");
+            } else {
+                $category = $_GET['category'];
+                $answer = mysqli_query($conn, "SELECT * FROM `goods` WHERE `category` = '$category' LIMIT 15 OFFSET $title");
+            }
+            $goods = array();
+            while ($res = mysqli_fetch_assoc($answer)) {
+                $goods[] = $res;
+            }
+            return $goods;
         }
-        $res = mysqli_fetch_assoc($answer);
-        return (ceil($res['COUNT(*)']/15));
-    }
-    $_GET['title'] = $_GET['title'] ? $_GET['title'] : 1;
-    $goods = get_for_title($_GET[title]);
-    $title_count = get_title_count();
-    $i = ($_GET['title'] - 2 < 1) ? 1 : $_GET['title'] - 2;
-    $title_end = (($_GET['title'] + 2) > $title_count) ? $title_count : ($_GET['title'] + 2);
-    if ($title_end - $i < 4) {
-        if ($i == 1)
-            $title_end = $title_count < 5 ? $title_count : 5;
-        else {
-            $i = (($title_end - 4) > 1) ? ($title_end - 4) : 1;
+
+        function get_title_count() {
+            $conn = mysqli_connect('localhost', 'root', 'root', 'store');
+            if (!$_GET['category']) {
+                $answer = mysqli_query($conn, "SELECT COUNT(*) FROM `goods`");
+            } else {
+                $category = $_GET['category'];
+                $answer = mysqli_query($conn, "SELECT COUNT(*) FROM `goods` WHERE `category` = '$category'");
+            }
+            $res = mysqli_fetch_assoc($answer);
+            return (ceil($res['COUNT(*)'] / 15));
         }
+
+        $_GET['title'] = $_GET['title'] ? $_GET['title'] : 1;
+        $goods = get_for_title($_GET[title]);
+        $title_count = get_title_count();
+        $i = ($_GET['title'] - 2 < 1) ? 1 : $_GET['title'] - 2;
+        $title_end = (($_GET['title'] + 2) > $title_count) ? $title_count : ($_GET['title'] + 2);
+        if ($title_end - $i < 4) {
+            if ($i == 1)
+                $title_end = $title_count < 5 ? $title_count : 5;
+            else {
+                $i = (($title_end - 4) > 1) ? ($title_end - 4) : 1;
+            }
+        }
+        $prev = ($_GET['title'] - 1) > 1 ? ($_GET['title'] - 1) : 1;
+        $next = ($_GET['title'] + 1) < $title_count ? ($_GET['title'] + 1) : $title_count;
+
+    } else {
+        $added = false;
+        $id = $_POST['buy'] ? $_POST['buy'] : $_POST['to_cart'];
+        foreach ($_SESSION['cart'] as $key => $val) {
+            if ($val['id'] == $id) {
+                $_SESSION['cart'][$key]['count']++;
+                $added = true;
+                break ;
+            }
+        }
+        if (!$added) {
+            $_SESSION['cart'][] = array('id' => $id, 'count' => 1);
+        }
+        if ($_POST['buy']) {
+            $way = "cart.php";
+        }
+        else if ($_POST['to_cart']) {
+            debug($title_count); die();
+            $way = "shop.php?title=" . $title_count;
+        }
+        header("Location: " . $way);
     }
-    $prev = ($_GET['title'] - 1) > 1 ? ($_GET['title'] - 1) : 1;
-    $next = ($_GET['title'] + 1) < $title_count ? ($_GET['title'] + 1) : $title_count;
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +76,7 @@
     <title>42 Music</title>
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/shop.css">
 </head>
 <body>
     <ul class="navigation">
@@ -62,7 +89,6 @@
         <li class="nav-item"><a href="shop.php?category=access"><img src="../img/login_png_81208.jpg" class="menu_img">Accessories</a></li>
         <li class="nav-item"></li>
         <li class="nav-item"><a href="<?php
-        session_start();
         if ($_SESSION['cur_user'])
             echo "main.php";
         else
@@ -70,9 +96,8 @@
         <li class="nav-item"><a href="modif.php"><img src="../img/login_png_81208.jpg" class="menu_img">Modify Account</a></li>
         <li class="nav-item"><a href="shop.php"><img src="../img/images.png" class="menu_img">Shop</a></li>
         <li class="nav-item"><a href="cart.php"><img src="../img/cart2.png" class="menu_img">Cart</a></li>
-        <li class="nav-item"><a href="#"><img src="../img/download.png" class="menu_img">Contacts</a></li>
+        <li class="nav-item"><a href="contacts.php"><img src="../img/download.png" class="menu_img">Contacts</a></li>
         <?php
-            session_start();
             if ($_SESSION['cur_user'] == 'admin')
                 echo "<li class=\"nav-item\"><a href=\"change_goods.php\"><img src=\"../img/admin.png\" class=\"menu_img\">Admin Panel</a></li>" 
         ?>
@@ -82,16 +107,21 @@
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger"></label>
     <div class="site-wrap">
-        <div class="header">
-
-        </div>
         <?php if ($goods) { ?>
             <div class="grid-container">
                 <?php foreach ($goods as $val) { ?>
                     <div class="grid-item">
-                        <?= $val['name'] ?><br/>
-                        <img src = "<?= $val['img'] ?>" class="shop_img" >
-                        <a class="grid_price" href="about.php?id=<?= $val['id']?>"><?= $val['price'] ?></a>
+                        <div class="description">
+                            <a href="about.php?id=<?= $val['id']?>">
+                                <p><?= $val['name'] ?></p><br />
+                                <img src="<?= $val['img'] ?>" class="shop_img" />
+                            </a>
+                            <p><?= $val['price'] . ' ₴' ?></p>
+                        </div>
+                        <form action="shop.php" method="post" class="control-buttons">
+                            <button type="submit" name="buy" value="<?= $val['id'] ?>">Buy</button>
+                            <button type="submit" name="to_cart" value="<?= $val['id'] ?>">To Cart</button>
+                        </form>
                     </div>
                 <?php } ?>
             </div>

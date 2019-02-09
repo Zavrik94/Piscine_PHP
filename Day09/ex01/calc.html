@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+</head>
+<body>
+    <input type="text" id="fir_val">
+    <select id="oper">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+        <option>%</option>
+    </select>
+    <input type="text" id="sec_val">
+    <input type="submit" value="Try me!" id="but">
+</body>
+<script>
+    window.setInterval(function useMe(){alert("Please, use me...")}, 30000);
+    const but = document.getElementById("but");
+    let res;
+    but.addEventListener("click", function() {
+            let fir = parseFloat(document.getElementById("fir_val").value);
+            let sec = parseFloat(document.getElementById("sec_val").value);
+            if (!(Number.isInteger(fir) && Number.isInteger(sec)) || (fir < 0 || sec < 0)) {
+                alert("Error :(’");
+            } else if ((document.getElementById("oper").value == '/' && sec == 0) || (document.getElementById("oper").value == '%' && sec == 0)) {
+                alert("It’s over 9000!");
+            } else {
+                switch (document.getElementById("oper").value) {
+                    case '+' : res = fir + sec; break;
+                    case '-' : res = fir - sec; break;
+                    case '*' : res = fir * sec; break;
+                    case '/' : res = fir / sec; break;
+                    case '%' : res = fir % sec; break;
+                }
+                console.log(res);
+                alert(res);
+            }
+        });
+</script>
+</html>

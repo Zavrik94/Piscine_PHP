@@ -1,5 +1,6 @@
+
 table, tr, td {
-    border: 3px solid black;
+    border: 1px solid grey;
     border-collapse: collapse;
 }
 
@@ -61,4 +62,37 @@ select {
     padding: 0 10px;
     cursor: text;
     opacity: 0.5;
+}
+
+.table_scroll tbody tr:hover {
+    background: rgba(0,0,0,.08);
+    cursor: pointer;
+}
+.table_scroll tbody a {
+    color: black;
+    text-decoration: none;
+}
+
+.table_scroll {
+    float: right;
+    margin-right: 20vw;
+}
+
+.table_scroll  tbody{
+    display:block;
+    overflow:auto;
+    max-height: 800px;
+    width:100%;
+  }
+  .table_scroll thead tr{
+    display:block;
+    width: 25vw;
+  }
+
+  .cn_tr {
+      width: 10vw;
+  }
+
+  .cn_us {
+    width: 15vw;
 }

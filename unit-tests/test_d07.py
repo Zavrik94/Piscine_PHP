@@ -6,8 +6,8 @@ from helper import *
 # expanduser, isfile, isdir, chdir
 import os
 
-day_location = '/Users/azavrazh/Piscine_PHP/d07/'
-resources = "/Users/vbrazas/projects/php_piscine/unit-tests/resources_d07/"
+day_location = '/Users/azavrazh/azavrazh/'
+resources = "/Users/azavrazh/Piscine_PHP/unit-tests/resources_d07/"
 tester_dir = os.getcwd()
 
 # START OF TESTS  START OF TESTS  START OF TESTS  START OF TESTS

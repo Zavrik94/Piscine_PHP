@@ -27,16 +27,17 @@
         }
     }
 
-    if (!$_SESSION['cur_user']) {
-        header("Location: " . ROOT . "view/create.php");
-    } else if (!$_POST["oldpw"]) {
-        $err = 'Pleace, enter the old password!';
-    } else if (!$_POST["newpw"]) {
-        $err = 'Pleace, enter the new password!';
-    } else if (modifyAccount($err, $_POST, $_SESSION)) {
-        header("Location: ". ROOT . "view/main.php");
+    if ($_POST) {
+        if (!$_SESSION['cur_user']) {
+            header("Location: " . ROOT . "view/create.php");
+        } else if (!$_POST["oldpw"]) {
+            $err = 'Pleace, enter the old password!';
+        } else if (!$_POST["newpw"]) {
+            $err = 'Pleace, enter the new password!';
+        } else if (modifyAccount($err, $_POST, $_SESSION)) {
+            header("Location: ". ROOT . "view/main.php");
+        }
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +51,6 @@
 <body>
 <ul class="navigation">
         <li class="nav-item"><a href="<?php
-        session_start();
         if ($_SESSION['cur_user'])
             echo "main.php";
         else
@@ -58,9 +58,8 @@
         <li class="nav-item"><a href="modif.php"><img src="../img/login_png_81208.jpg" class="menu_img">Modify Account</a></li>
         <li class="nav-item"><a href="shop.php"><img src="../img/images.png" class="menu_img">Shop</a></li>
         <li class="nav-item"><a href="cart.php"><img src="../img/cart2.png" class="menu_img">Cart</a></li>
-        <li class="nav-item"><a href="#"><img src="../img/download.png" class="menu_img">Contacts</a></li>
+        <li class="nav-item"><a href="contacts.php"><img src="../img/download.png" class="menu_img">Contacts</a></li>
         <?php
-            session_start();
             if ($_SESSION['cur_user'] == 'admin')
                 echo "<li class=\"nav-item\"><a href=\"change_goods.php\"><img src=\"../img/admin.png\" class=\"menu_img\">Admin Panel</a></li>" 
         ?>
@@ -79,12 +78,8 @@
     </form>
 
     <?php if ($err) { ?>
-        <div class="error">
-            <?= $err ?>
-        </div>
-    <?php } 
-        $err = false;
-    ?>
+        <script>alert('<?= $err ?>');</script>
+    <?php } $err = false; ?>
 </div>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ballon</title>
+        <style>
+            #balloon {
+                border-radius: 50%;
+                background: red;
+                position: absolute;
+                top: calc(50% - 100px);
+                right: calc(50% - 100px);
+                width: 200px;
+                height: 200px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="balloon"></div>
+    </body>
+    <script>
+        const bal = document.getElementById("balloon");
+        let absOffset = 100;
+
+        bal.addEventListener("click", function() {
+            if (bal.clientHeight < 410) {
+                switch (bal.style.backgroundColor) {
+                    case 'red'      : bal.style.backgroundColor = 'green';  break;
+                    case 'green'    : bal.style.backgroundColor = 'blue';   break;
+                    case 'blue'     : bal.style.backgroundColor = 'red';    break;
+                    default         : bal.style.backgroundColor = 'green';
+                }
+            }
+            bal.style.height = bal.clientHeight + 10 + 'px';
+            bal.style.width = bal.clientWidth + 10 + 'px';
+            absOffset += 5;
+            if (bal.clientHeight >= 420) {
+                bal.style.height = '200px';
+                bal.style.width = '200px';
+                absOffset = 100;
+            }
+            bal.style.right = parseFloat(window.innerWidth / 2) - absOffset + 'px';
+            bal.style.top = parseFloat(window.innerHeight / 2) - absOffset + 'px';
+        });
+
+        bal.addEventListener("mouseout", function () {
+            bal.style.height = '200px';
+            bal.style.width = '200px';
+            absOffset = 100;
+            bal.style.right = parseFloat(window.innerWidth / 2) - absOffset + 'px';
+            bal.style.top = parseFloat(window.innerHeight / 2) - absOffset + 'px';
+        });
+    </script>
+</html>

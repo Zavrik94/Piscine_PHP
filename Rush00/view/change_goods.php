@@ -4,6 +4,8 @@
         header("Location: " . ROOT . "view/main.php");
     }
 
+    $categories = ['guitars', 'keyboard', 'drums', 'brass', 'microphones', 'park', 'accessories'];
+
     if ($_POST['submit'] == 'search') {
         $name = $_POST['name'];
         $answer = mysqli_query($conn, "SELECT * FROM `goods` WHERE `name` LIKE '%$name%'");
@@ -18,11 +20,21 @@
         $count = $_POST['count'];
         $about = $_POST['about'];
         $category = $_POST['category'];
+        if (!in_array($category, $categories)) {
+            $err = 'Bad category has been set!';
+        }
         $img = $_POST['img'];
         $sql = "UPDATE `goods` SET `name`='$name',`price`=$price,`count`=$count,`about`='$about',`img`='$img',`category`='$category' WHERE `id` = $id";
         $answer = mysqli_query($conn, $sql);
         if (!$answer) {
             $err = 'Fill all fields, please!';
+        }
+    } else if ($_POST['submit'] == 'Delete') {
+        $id = $_POST['id'];
+        $sql = "DELETE FROM `goods` WHERE `id` = $id";
+        $answer = mysqli_query($conn, $sql);
+        if (!$answer) {
+            $err = 'Can`t delete';
         }
     }
 ?>
@@ -43,10 +55,6 @@
             <li class="nav-item"><a href="add_good.php"><img src="../img/images.png" class="menu_img">Add Goods</a></li>
             <li class="nav-item"><a href="change_goods.php"><img src="../img/images.png" class="menu_img">Change Goods</a></li>
             <li class="nav-item"><a href="search_check.php"><img src="../img/images.png" class="menu_img">Search Check</a></li>
-            <?php
-                if ($_SESSION['cur_user'] == 'admin')
-                    echo "<li class=\"nav-item\"><a href=\"change_goods.php\"><img src=\"../img/admin.png\" class=\"menu_img\">Admin Panel</a></li>" 
-            ?>
             <li class="nav-item"><a href="../backend/logout.php"><img src="../img/logout.png" class="menu_img">Logout</a></li>
         </ul>
 
@@ -94,29 +102,22 @@
                     <input type="text" name="name" value="" placeholder="Name" class="text_change">
                     <select name="category">
                         <option disabled selected>Choose category!</option>
-                        <option>guitars</option>
-                        <option>keyboard</option>
-                        <option>drums</option>
-                        <option>brass</option>
-                        <option>microphones</option>
-                        <option>park</option>
-                        <option>accessories</option>
+                        <?php foreach ($categories as $val) {
+                            echo "<option>" . $val . "</option>";
+                        } ?>
                     </select><br />
                     <input type="text" name="price" value="" placeholder="Price" class="text_change">
                     <input type="text" name="count" value="" placeholder="Count at stock" class="text_change"><br />
                     <textarea class="about_change" name="about" value="" placeholder="About"></textarea><br />
                     <input type="text" name="img" value="" placeholder="IMG URL" class="img_url_change"><br />
-                    <button type="submit" name="submit" value="OK">OK</button>
+                    <button type="submit" name="submit" value="OK">Change</button>
+                    <button type="submit" name="submit" value="Delete">Delete</button>
                     <input type="number" name="id" style="display: none">
                 </form>
 
                 <?php if ($err) { ?>
-                    <div class="error">
-                        <?= $err ?>
-                    </div>
-                <?php } 
-                    $err = false;
-                ?>
+                    <script>alert('<?= $err ?>');</script>
+                <?php } $err = false; ?>
             </div>
         </div>
     </body>
